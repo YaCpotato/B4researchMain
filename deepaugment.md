@@ -100,3 +100,34 @@ WideResNetを作る
 
 #### build_basicCNN(self)
 俗に名前がついているわけでもない普通のCNNを作る。optimizerはRMSProp,誤差関数は交差エントロピー
+
+## augmenter
+加工のタイプは、
+|deepaugment|Autoaugment|imgaugのaugment一覧|
+|:--:|:--:|:--:|
+|crop|||
+|gaussian-blur|||
+| rotate|rotate||
+| shear|shear(x),(y)||
+| translate-x|translate-x||
+| translate-y|translate-y||
+| horizontal-flip|||
+| vertical-flip|||
+| sharpen|sharpness||
+| emboss|||
+| additive-gaussian-noise|||
+| dropout|||
+| coarse-dropout|||
+| gamma-contrast|||
+| brighten|brightness||
+| invert|invert||
+| fog|||
+| clouds|||
+| histgram-equalize|||
+| super-pixels|||
+| perspective-transform|||
+| elastic-transform|||
+| add-to-hue-and-saturation|||
+| coarse-salt-pepper|||
+| grayscale|||
+||Color(Binarization)||
