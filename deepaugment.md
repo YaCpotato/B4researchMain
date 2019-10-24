@@ -126,13 +126,13 @@ WideResNetを作る
 | invert|invert|画素値逆転|
 | fog|-|霧がけ|
 | clouds|-|雲ノイズ|
-| histgram-equalize|Equalize|ヒストグラム平坦化|
-| super-pixels|-|Superpixel|
-| perspective-transform|-|透視変換|
-| elastic-transform|-|弾性変換|
+| -|Equalize|ヒストグラム平坦化|
+| (super-pixels)|-|Superpixel|
+| (perspective-transform)|-|透視変換|
+| (elastic-transform)|-|弾性変換|
 | add-to-hue-and-saturation|-|色相、彩度増加|
 | coarse-salt-pepper|-|粗塩ノイズ|
-| grayscale|-|グレースケール変換|
+| (grayscale)|-|グレースケール変換|
 |-|Color(Binarization)|二値化
 |-|Cutout|Cutout|
 |-|AutoContrast|自動コントラスト補正|
