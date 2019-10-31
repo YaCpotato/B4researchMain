@@ -103,31 +103,39 @@ WideResNetを作る
 
 ## augmenter
 加工のタイプは、
-|deepaugment|Autoaugment|imgaugのaugment一覧|
+|deepaugment|Autoaugment|Effect|
 |:--:|:--:|:--:|
-|crop|||
-|gaussian-blur|||
-| rotate|rotate||
-| shear|shear(x),(y)||
-| translate-x|translate-x||
-| translate-y|translate-y||
-| horizontal-flip|||
-| vertical-flip|||
-| sharpen|sharpness||
-| emboss|||
-| additive-gaussian-noise|||
-| dropout|||
-| coarse-dropout|||
-| gamma-contrast|||
-| brighten|brightness||
-| invert|invert||
-| fog|||
-| clouds|||
-| histgram-equalize|||
-| super-pixels|||
-| perspective-transform|||
-| elastic-transform|||
-| add-to-hue-and-saturation|||
-| coarse-salt-pepper|||
-| grayscale|||
-||Color(Binarization)||
+|crop|-|拡大|
+|gaussian-blur|-|ノイズ|
+| rotate|rotate|回転|
+| shear|ShearX,ShearY|斜めにする|
+| translate-x|-|?|
+| translate-y|-|?|
+|-|TranslateX|X軸平行移動|
+|-|TranslateY|Y軸平行移動|
+| horizontal-flip|-|左右反転|
+| vertical-flip|-|上下反転|
+| sharpen|sharpness|鮮明化|
+| emboss|-|エンボスフィルタ|
+| additive-gaussian-noise|-|可算性ガウシアンノイズ|
+| dropout|-|?|
+| coarse-dropout|-|?|
+| gamma-contrast|-|ガンマ補正|
+|-|Contrast|コントラスト補正|
+| brighten|brightness|明るさ補正|
+| invert|invert|画素値逆転|
+| fog|-|霧がけ|
+| clouds|-|雲ノイズ|
+| -|Equalize|ヒストグラム平坦化|
+| (super-pixels)|-|Superpixel|
+| (perspective-transform)|-|透視変換|
+| (elastic-transform)|-|弾性変換|
+| add-to-hue-and-saturation|-|色相、彩度増加|
+| coarse-salt-pepper|-|粗塩ノイズ|
+| (grayscale)|-|グレースケール変換|
+|-|Color(Binarization)|二値化
+|-|Cutout|Cutout|
+|-|AutoContrast|自動コントラスト補正|
+|-|Posterize|ポスター化|
+|-|Solarize|?|
+|-|SamplePairng|画像の重ねがけ|
