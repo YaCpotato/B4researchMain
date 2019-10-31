@@ -12,5 +12,5 @@ module load cuda/10.0/10.0.130
 module load cudnn/7.6/7.6.4
 export NEW_VENV=${HOME}/B4researchMain/deepaugment
 source ${NEW_VENV}/bin/activate
-python ./val_run.py > "checkresult.txt"
+python ./deepaugment_policy_search.py > "checkresult.txt"
 
